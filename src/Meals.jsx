@@ -15,10 +15,12 @@ const Meals = () => {
     console.log(meals);
   }, []);
   return (
-    <div className=" grid grid-cols-4 container mx-auto">
-      {meals?.map((card) => (
-        <Card key={card.idMeal} card={card} />
-      ))}
+    <div className=" bg-accent">
+      <div className=" grid grid-cols-4 gap-8 container mx-auto">
+        {meals?.map((card) => (
+          <Card key={card.idMeal} card={card} />
+        ))}
+      </div>
     </div>
   );
 };
