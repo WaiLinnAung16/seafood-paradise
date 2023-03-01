@@ -5,11 +5,10 @@ import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import Menu from "./Components/Menu";
 import Navbar from "./Components/Navbar";
-import Meals from "./Meals";
 
 const App = () => {
   return (
-    <div className=" font-primary">
+    <div className=" font-primary bg-info">
       <Navbar />
       <div className=" py-9"></div>
       <Routes>
@@ -18,7 +17,6 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Meals />
     </div>
   );
 };
