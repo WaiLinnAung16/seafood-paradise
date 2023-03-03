@@ -19,7 +19,7 @@ const DemoMeal = () => {
 
   return (
     <>
-      <div className="  bg-gradient-to-b from-primary via-secondary to-info">
+      <div className="">
         <div className=" container mx-auto py-20 flex flex-col items-center">
           <div className="mb-16">
             <h1 className=" font-bold text-slate-100 text-3xl uppercase">

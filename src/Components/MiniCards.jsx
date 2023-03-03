@@ -3,7 +3,7 @@ import MiniCard from "./MiniCard";
 
 const MiniCards = () => {
   return (
-    <div className=" pb-20 bg-primary">
+    <div className=" pb-20">
       <div className=" flex justify-center items-center gap-10 container mx-auto">
         <MiniCard />
         <MiniCard />

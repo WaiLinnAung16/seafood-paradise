@@ -21,7 +21,7 @@ const DemoMealCard = ({ meal }) => {
             Show Recipe
             <TbReportSearch className=" text-xl" />
           </button>
-          <button className="flex items-center justify-center gap-3  text-white py-2 px-4 rounded bg-info transition-all hover:shadow hover:shadow-info hover:scale-105">
+          <button className="flex items-center justify-center gap-3  text-black py-2 px-4 rounded bg-info transition-all hover:shadow hover:shadow-info hover:scale-105">
             Save
             <BiBookmark className=" text-xl" />
           </button>

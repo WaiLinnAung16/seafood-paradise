@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const active =
-    "font-bold border-b-2 border-secondary py-1 px-3 transition-all duration-150";
+    "font-bold border-b-2 border-info py-1 px-3 transition-all duration-150";
   const activeClass = ({ isActive }) => (isActive ? `${active}` : "py-1 px-3");
   return (
     <div className=" bg-primary py-5 text-white z-10 shadow-lg  w-full fixed">

@@ -9,7 +9,7 @@ import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
-    <div className=" font-primary relative">
+    <div className=" font-primary bg-gradient-to-b from-primary via-primary to-secondary relative">
       <Navbar />
       <div className=" py-9"></div>
       <Routes>
@@ -18,7 +18,6 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <div className=" py-48 -z-50"></div> */}
       <Footer />
     </div>
   );
