@@ -31,7 +31,7 @@ const Blog = () => {
         navigation
         pagination={{ clickable: true }}
       >
-        <SwiperSlide className=" flex flex-col items-center justify-center py-20 bg-secondary">
+        <SwiperSlide className=" flex flex-col items-center justify-center py-20 bg-slate-800">
           <div className=" h-28 rounded-full overflow-hidden mb-6">
             <img src={profile} alt="" className=" h-32 object-center" />
           </div>
@@ -59,7 +59,7 @@ const Blog = () => {
             </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className=" flex flex-col items-center justify-center py-20 bg-sky-600">
+        <SwiperSlide className=" flex flex-col items-center justify-center py-20 bg-red-900">
           <div className=" h-28 rounded-full overflow-hidden mb-6">
             <img src={profile} alt="" className=" h-32 object-center" />
           </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className=" container flex justify-between items-center mx-auto">
         <h1 className=" font-bold text-xl">
           Seafood
-          <span className=" text-secondary">Paradise</span>
+          <span className=" text-info">Paradise</span>
         </h1>
         <ul className=" flex items-center gap-8 text-base">
           <NavLink to="/" className={activeClass}>

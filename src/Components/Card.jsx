@@ -16,11 +16,11 @@ const Card = ({ card }) => {
           <p className=" font-semibold text-xl">{card.strMeal}</p>
         </div>
         <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-5 text-white">
-          <button className="flex items-center justify-center gap-3 bg-purple-600  py-2 px-5 rounded hover:bg-purple-800">
+          <button className="flex items-center justify-center gap-3  py-2 px-5 rounded ">
             Show Recipe
             <TbReportSearch className=" text-xl" />
           </button>
-          <button className="flex items-center justify-center gap-3 bg-secondary text-white py-2 px-4 rounded hover:bg-blue-900">
+          <button className="flex items-center justify-center gap-3 text-white py-2 px-4 rounded">
             Save
             <BiBookmark className=" text-xl" />
           </button>

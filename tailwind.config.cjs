@@ -1,18 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html','./src/**/*.{js,jsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      fontFamily:{
-        primary: 'Montserrat, sans-serif'
+      fontFamily: {
+        primary: "Montserrat, sans-serif",
       },
-      colors:{
-        primary:'#AD7BE9',
-        secondary:'#3E54AC',
-        info:'#BFDCE5',
-        accent:'#EEEEEE'
-      }
+      colors: {
+        primary: "#3A1078",
+        secondary: "#2F58CD",
+        info: "#3795BD",
+        accent: "#3795BD",
+      },
     },
   },
   plugins: [],
-}
+};
