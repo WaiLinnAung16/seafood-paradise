@@ -29,7 +29,7 @@ const Meals = () => {
               className="w-96 pl-5 py-2 rounded-lg outline-none group-hover/item:ring-1 group-hover/item:ring-primary"
               placeholder="What do you want to cook?"
             />
-            <BiSearchAlt className="text-2xl text-white bg-info h-10 w-10 p-2 cursor-pointer rounded-r-md absolute bottom-0 right-0" />
+            <BiSearchAlt className="text-2xl text-white bg-secondary h-10 w-10 p-2 cursor-pointer rounded-r-md absolute bottom-0 right-0" />
           </div>
         </div>
         <div className=" grid grid-cols-4 gap-8 ">

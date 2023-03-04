@@ -26,7 +26,7 @@ const Footer = () => {
               className=" py-2 pl-4 rounded outline-none  shadow-md focus:shadow"
             ></textarea>
           </div>
-          <button className=" px-8 py-2 bg-info text-white rounded mt-4">
+          <button className=" px-8 py-2 bg-info text-primary font-semibold rounded mt-4">
             Send
           </button>
         </div>

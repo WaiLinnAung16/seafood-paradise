@@ -10,7 +10,7 @@ const Hero = () => {
           {/* <h1 className=" font-extrabold text-7xl text-white mb-10">
             ARE U HUNGRY ?
           </h1> */}
-          <h3 className=" font-extrabold text-7xl text-slate-100 flex flex-col justify-center items-center">
+          <h3 className=" font-extrabold text-7xl text-slate-50 flex flex-col justify-center items-center">
             <span className="tracking-wide relative">
               Easy
               <img

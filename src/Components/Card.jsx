@@ -4,7 +4,7 @@ import { BiBookmark } from "react-icons/bi";
 const Card = ({ card }) => {
   return (
     <div className="my-5">
-      <div className="rounded-md h-[380px] shadow-lg overflow-hidden relative bg-slate-100">
+      <div className="rounded-md h-[380px] shadow-lg overflow-hidden relative bg-accent">
         <div className="">
           <img
             src={card.strMealThumb}
@@ -20,7 +20,7 @@ const Card = ({ card }) => {
             Show Recipe
             <TbReportSearch className=" text-xl" />
           </button>
-          <button className="flex items-center justify-center gap-3  text-black py-2 px-4 rounded bg-info transition-all hover:shadow hover:shadow-info hover:scale-105">
+          <button className="flex items-center justify-center gap-3 font-semibold text-black py-2 px-4 rounded border border-secondary transition-all hover:shadow hover:bg-secondary hover:text-white hover:shadow-info hover:scale-105">
             Save
             <BiBookmark className=" text-xl" />
           </button>

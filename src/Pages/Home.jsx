@@ -1,8 +1,8 @@
 import React from "react";
-import DemoMeal from "./DemoMeal";
-import Hero from "./Hero";
-import MiniCards from "./MiniCards";
-import BlogContainer from "./BlogContainer";
+import DemoMeal from "../Components/DemoMeal";
+import Hero from "../Components/Hero";
+import MiniCards from "../Components/MiniCards";
+import BlogContainer from "../Components/BlogContainer";
 
 const Home = () => {
   return (
