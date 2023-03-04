@@ -17,7 +17,7 @@ const Meals = () => {
     console.log(meals);
   }, []);
   return (
-    <div className=" mb-[380px]">
+    <div className=" mb-[340px]">
       <div className="container mx-auto py-10">
         <div className=" flex justify-between items-center gap-3">
           <h1 className=" text-white font-bold text-3xl uppercase">
