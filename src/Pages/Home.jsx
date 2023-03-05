@@ -2,7 +2,7 @@ import React from "react";
 import DemoMeal from "../Components/DemoMeal";
 import Hero from "../Components/Hero";
 import MiniCards from "../Components/MiniCards";
-import BlogContainer from "../Components/BlogContainer";
+import RandomMenu from "../Components/RandomMenu";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Hero />
       <MiniCards />
       <DemoMeal />
-      <BlogContainer />
+      <RandomMenu />
     </div>
   );
 };

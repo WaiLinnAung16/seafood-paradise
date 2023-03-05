@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import lines from "../assets/lines.svg";
 import lines2 from "../assets/lines2.svg";
-import arrow from "../assets/down.svg";
+
 const Hero = () => {
   return (
-    <div className=" h-[850px] w-full  bg-[url('/public/bg.jpg')] bg-cover bg-no-repeat">
+    <div className="h-[850px] w-full bg-cover bg-no-repeat bg-[url('./bg.jpg')]">
       <div className=" bg-secondary h-full bg-opacity-40 backdrop-blur-sm flex justify-center pb-24">
         <h3 className="font-semibold text-9xl text-white flex flex-col justify-center items-center">
           <span className="tracking-wide relative">
