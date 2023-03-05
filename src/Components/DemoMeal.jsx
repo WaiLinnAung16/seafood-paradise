@@ -33,7 +33,7 @@ const DemoMeal = () => {
           </div>
 
           <Link to={"/menu"}>
-            <button className="flex items-center justify-center gap-3 mt-10 mx-auto block py-4 px-8 bg-white ring-1 ring-primary font-semibold rounded transition-all hover:bg-primary hover:ring-white hover:text-white">
+            <button className="flex items-center justify-center gap-3 mt-10 mx-auto py-4 px-8 bg-white ring-1 ring-primary font-semibold rounded transition-all hover:bg-primary hover:ring-white hover:text-white">
               View others
               <IoMdArrowRoundForward className=" text-xl" />
             </button>

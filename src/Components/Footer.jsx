@@ -17,7 +17,7 @@ const Footer = () => {
           <div className=" flex flex-col gap-5">
             <input
               type="email"
-              placeholder="Your email address"
+              placeholder="UserName"
               className=" py-2 pl-4 rounded outline-none  shadow-md focus:shadow"
             />
             <textarea
@@ -31,10 +31,10 @@ const Footer = () => {
           </button>
         </div>
         <div className=" flex items-center gap-5 text-white text-3xl cursor-pointer">
-          <FaFacebookSquare className="transition hover:scale-125" />
-          <FaInstagramSquare className="transition hover:scale-125" />
-          <FaTwitterSquare className="transition hover:scale-125" />
-          <FaGithubSquare className="transition hover:scale-125" />
+          <FaFacebookSquare className="transition rounded hover:scale-125 hover:ring-2 hover:ring-blue-500" />
+          <FaInstagramSquare className="transition rounded hover:scale-125 hover:ring-2 hover:ring-rose-600" />
+          <FaTwitterSquare className="transition rounded hover:scale-125 hover:ring-2 hover:ring-sky-700" />
+          <FaGithubSquare className="transition rounded hover:scale-125 hover:ring-2 hover:ring-zinc-500" />
         </div>
       </section>
     </div>
