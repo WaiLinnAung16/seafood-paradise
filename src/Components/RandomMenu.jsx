@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { TiTick } from "react-icons/ti";
+import ShowHideIcon from "./ShowHideIcon";
+import ShowHideIngre from "./ShowHideIngre";
 const RandomMenu = () => {
   const [ingredient, setIngredients] = useState([]);
   const [random, setRandom] = useState({});
   let [show, setShow] = useState(false);
   const handler = () => {
     setShow((show = !show));
+  };
+  let [showIngre, setShowIngre] = useState(true);
+  const handler2 = () => {
+    setShowIngre((showIngre = !showIngre));
   };
   const ingredients = [
     {
@@ -47,7 +54,7 @@ const RandomMenu = () => {
   }, [random]);
 
   return (
-    <div className=" py-20 mb-[340px]">
+    <div className=" py-20 mb-[230px]">
       <h1 className=" font-bold text-slate-100 text-3xl uppercase text-center mb-16">
         Sample Menu
       </h1>
@@ -64,21 +71,10 @@ const RandomMenu = () => {
           <h4 className=" bg-info px-2 rounded text-secondary text-sm font-bold mb-4">
             {random?.strCategory}
           </h4>
-          <h1 className="text-lg font-bold items-center gap-2 flex mb-2">
-            Instruction
-            <AiFillEye
-              className={`p-1 bg-primary text-3xl rounded-full ring-1 ring-white transition hover:bg-white hover:text-primary ${
-                show ? "flex" : "hidden"
-              }`}
-              onClick={() => handler()}
-            />
-            <AiFillEyeInvisible
-              className={`p-1 bg-primary text-3xl rounded-full ring-1 ring-white transition hover:bg-white hover:text-primary ${
-                show && "hidden"
-              }`}
-              onClick={() => handler()}
-            />
-          </h1>
+          <div className="text-lg font-bold items-center gap-2 flex mb-2 transition-all">
+            <h1 className="uppercase text-green-500">Instruction</h1>
+            <ShowHideIcon show={show} handler={handler} />
+          </div>
           <p
             className={`leading-7 text-slate-200 mb-3 ${
               show ? "flex" : "hidden"
@@ -86,11 +82,19 @@ const RandomMenu = () => {
           >
             {random?.strInstructions?.substring(0, 800)}...
           </p>
-          <h1 className=" text-lg font-bold mb-1">Ingredients</h1>
-          <ul>
-            {ingredient?.map((i) => (
-              <li>- {i?.ing}</li>
-            ))}
+          <h1 className=" text-lg font-bold mb-2 text-yellow-500 uppercase flex items-center gap-2">
+            Ingredients
+            <ShowHideIngre showIngre={showIngre} handler2={handler2} />
+          </h1>
+          <ul className={`flex gap-4 ${!showIngre && "hidden"}`}>
+            {ingredient?.map((i) => {
+              return (
+                <li className=" flex items-center gap-1">
+                  <TiTick />
+                  {i?.ing}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

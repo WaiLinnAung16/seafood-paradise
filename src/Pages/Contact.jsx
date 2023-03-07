@@ -5,7 +5,7 @@ import { BiCurrentLocation } from "react-icons/bi";
 
 const Contact = () => {
   return (
-    <div className=" h-screen mb-[340px] flex items-center justify-center">
+    <div className=" h-screen mb-[230px] flex items-center justify-center">
       <div className=" container mx-auto flex flex-col items-center">
         <div className=" text-white text-center mb-12">
           <h1 className=" font-bold text-3xl mb-2 uppercase">Contact</h1>
