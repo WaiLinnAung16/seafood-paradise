@@ -1,11 +1,15 @@
 import React from "react";
 import { BiBookmark } from "react-icons/bi";
 import { TbReportSearch } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const DemoMealCard = ({ meal }) => {
   return (
     <div className="my-5">
-      <div className="rounded-md h-[380px] shadow-lg overflow-hidden relative bg-accent">
+      <div
+        className="rounded-md h-[380px] shadow overflow-hidden relative bg-accent cursor-pointer transition delay-100
+       transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary"
+      >
         <div className="">
           <img
             src={meal.strMealThumb}
@@ -17,14 +21,12 @@ const DemoMealCard = ({ meal }) => {
           <p className=" font-semibold text-xl">{meal.strMeal}</p>
         </div>
         <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-5 text-white">
-          <button className="flex items-center justify-center gap-3  py-2 px-5 rounded bg-primary transition-all hover:shadow hover:shadow-primary hover:scale-105">
-            Show Recipe
-            <TbReportSearch className=" text-xl" />
-          </button>
-          <button className="flex items-center justify-center gap-3 font-semibold text-black py-2 px-4 rounded border border-secondary transition-all hover:shadow hover:bg-secondary hover:text-white hover:shadow-info hover:scale-105">
-            Save
-            <BiBookmark className=" text-xl" />
-          </button>
+          <Link to={"/detail"}>
+            <button className="flex items-center justify-center gap-3  py-3 px-10 rounded bg-primary transition-all hover:shadow hover:shadow-primary hover:bg-white hover:text-primary hover:font-bold hover:ring-2 hover:ring-primary">
+              Show Detail
+              <TbReportSearch className=" text-xl" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

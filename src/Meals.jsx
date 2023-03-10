@@ -19,7 +19,7 @@ const Meals = () => {
   return (
     <div className=" mb-[230px]">
       <div className="container mx-auto py-10">
-        <div className=" flex justify-between items-center gap-3">
+        <div className=" flex justify-between items-center gap-3 mb-3">
           <h1 className=" text-white font-bold text-3xl uppercase">
             Discover Recipes
           </h1>

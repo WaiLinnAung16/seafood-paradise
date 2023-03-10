@@ -89,7 +89,7 @@ const RandomMenu = () => {
           <ul className={`flex gap-4 ${!showIngre && "hidden"}`}>
             {ingredient?.map((i) => {
               return (
-                <li className=" flex items-center gap-1">
+                <li key={i.id} className=" flex items-center gap-1">
                   <TiTick />
                   {i?.ing}
                 </li>
