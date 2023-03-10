@@ -6,7 +6,7 @@ import RandomMenu from "../Components/RandomMenu";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
       <MiniCards />
       <DemoMeal />

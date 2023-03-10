@@ -12,7 +12,7 @@ const Contact = () => {
           <h4 className=" text-lg">Get in touch with me</h4>
         </div>
         <div className=" flex flex-col-reverse gap-5">
-          <div className=" w-full md:w-[500px] px-2 lg:mx-0  mt-2">
+          <div className=" w-[500px] mt-2">
             <form className=" flex flex-col gap-3">
               <input
                 type="text"
@@ -37,8 +37,8 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="text-white flex flex-col gap-5 px-2">
-            <div className=" flex flex-col gap-5 lg:flex-row lg:gap-0 justify-between">
+          <div className="text-white flex flex-col gap-5">
+            <div className=" flex justify-between">
               <div className=" flex items-center gap-2">
                 <div className=" w-12 h-12 rounded-full bg-info text-secondary flex justify-center items-center text-xl">
                   <TbPhoneCall />
@@ -56,7 +56,7 @@ const Contact = () => {
               <div className=" w-12 h-12 rounded-full bg-info text-secondary flex justify-center items-center text-xl">
                 <BiCurrentLocation />
               </div>
-              <p className=" tracking-wide w-[80%]">
+              <p className=" tracking-wide">
                 No.271, Thamine Myothit 7 street, Mayangone
               </p>
             </div>
