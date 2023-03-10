@@ -1,16 +1,15 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DemoMealCard from "./DemoMealCard";
-import underline from "../assets/underline.svg";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 const DemoMeal = () => {
   const [meals, setMeals] = useState([]);
 
   const getData = async () => {
-    const { data } = await axios.get(
+    const api = await fetch(
       "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
     );
+    const data = await api.json();
     setMeals(data.meals);
   };
   useEffect(() => {
