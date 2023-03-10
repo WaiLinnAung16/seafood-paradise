@@ -8,10 +8,9 @@ const DemoMeal = () => {
   const [meals, setMeals] = useState([]);
 
   const getData = async () => {
-    const api = await fetch(
+    const { data } = await axios.get(
       "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
     );
-    const data = await api.json();
     setMeals(data.meals);
   };
   useEffect(() => {
