@@ -1,10 +1,13 @@
 import React from "react";
 import lines from "../assets/lines.svg";
 import lines2 from "../assets/lines2.svg";
+import bg from "../assets/bg.jpg";
 
 const Hero = () => {
   return (
-    <div className="h-[850px] w-full bg-cover bg-no-repeat bg-[url('./bg.jpg')] bg-center lg:bg-top">
+    <div
+      className={`h-[850px] w-full bg-cover bg-no-repeat bg-[url('${bg}')] bg-center lg:bg-top`}
+    >
       <div className=" bg-secondary h-full bg-opacity-50 flex justify-center pb-24">
         <h3 className="font-semibold text-7xl md:text-8xl lg:text-9xl text-white flex flex-col justify-center items-center">
           <span className="tracking-wide relative">

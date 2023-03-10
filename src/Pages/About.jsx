@@ -1,12 +1,12 @@
 import React from "react";
-
+import bg from "../assets/bg.jpg";
 const About = () => {
   return (
     <div className=" mb-[230px] h-screen flex justify-center items-center">
       <div className=" flex flex-col-reverse xl:flex-row justify-center items-center container mx-auto">
         <div className=" w-[90%] xl:w-1/2">
           <img
-            src="./bg.jpg"
+            src={bg}
             alt=""
             className="h-[250px] md:w-full lg:h-[400px] rotate-0 xl:rotate-90 object-cover rounded-lg"
           />
