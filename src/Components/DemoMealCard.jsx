@@ -21,7 +21,7 @@ const DemoMealCard = ({ meal }) => {
           <p className=" font-semibold text-xl">{meal.strMeal}</p>
         </div>
         <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-5 text-white">
-          <Link to={"/detail"}>
+          <Link to={`/detail/${meal.idMeal}`}>
             <button className="flex items-center justify-center gap-3  py-3 px-10 rounded bg-primary transition-all hover:shadow hover:shadow-primary hover:bg-white hover:text-primary hover:font-bold hover:ring-2 hover:ring-primary">
               Show Detail
               <TbReportSearch className=" text-xl" />

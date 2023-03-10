@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import React, { useEffect, useState } from "react";
 import Card from "./Components/Card";
 import { BiFilterAlt, BiSearch, BiSearchAlt } from "react-icons/bi";
@@ -7,9 +7,8 @@ const Meals = () => {
   const [meals, setMeals] = useState([]);
 
   const getData = async () => {
-    const { data } = await axios.get(
-      "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
-    );
+    const api = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`);
+    const data = await api.json();
     setMeals(data.meals);
   };
   useEffect(() => {
