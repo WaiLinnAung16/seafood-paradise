@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-primary py-12 fixed bottom-0 w-full -z-10">
+    <div className="bg-primary py-12 fixed bottom-0 min-w-full -z-10">
       <section className=" container mx-auto flex flex-col items-center gap-7">
         <h1 className=" font-bold text-3xl text-white">
           Seafood

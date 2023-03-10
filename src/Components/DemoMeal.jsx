@@ -19,14 +19,14 @@ const DemoMeal = () => {
 
   return (
     <>
-      <div className="">
-        <div className=" container mx-auto py-20 flex flex-col items-center">
+      <div>
+        <div className=" container mx-auto py-20 flex flex-col items-center px-5 md:px-0">
           <div className="mb-16">
             <h1 className=" font-bold text-slate-100 text-3xl uppercase">
               Popular Dishes
             </h1>
           </div>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:px-5 xl:grid-cols-4 gap-8">
             {meals?.map(
               (meal, i) => i < 4 && <DemoMealCard key={i} meal={meal} />
             )}
