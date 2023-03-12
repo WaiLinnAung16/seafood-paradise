@@ -21,10 +21,10 @@ const SearchMenu = () => {
       <div className=" w-96 mx-auto">
         <Link
           to={"/menu"}
-          className=" flex justify-center items-center gap-2 mb-6 text-info/60 cursor-pointer hover:text-info"
+          className=" flex justify-center items-center gap-2 mb-6 text-medium text-info/80 cursor-pointer hover:text-info"
         >
           <BsArrowLeftCircleFill />
-          <h1 className="font-bold text-sm">Back to Menu</h1>
+          <h1 className="font-bold">Back to Menu</h1>
         </Link>
       </div>
       <h1 className=" font-semibold text-slate-100 text-2xl text-center mb-8">
